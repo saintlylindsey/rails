@@ -7,5 +7,7 @@ Rails.application.routes.draw do
 
   	root :to => "welcome#index"
 
+  	match ':controller(/:action(/:id(.:format)))', :via => :all
+
 end
 
